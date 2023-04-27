@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { defineAsyncComponent, ref } from 'vue'
+import flineMainApp from 'flineV-main-vue/remote';
 
 defineProps<{ msg: string }>()
 const RemoteHelloWorld = defineAsyncComponent(() => import('remote-app/HelloWorld'));
-const flineMainApp = defineAsyncComponent(() => import('flineV-main-vue/remote'));
+// const flineMainApp = defineAsyncComponent(() => import('flineV-main-vue/remote'));
 const count = ref(0)
 </script>
 
